@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center;align-items: center;">
+      <div >
+        <h1>Juego de Piedra, Papel o Tijera</h1>
+      </div>
+    </div>
+    <div>
+      <div style="display: flex; justify-content: center">
+        <img class="choices" onclick="play('piedra')" src="img/piedra.jpg" />
+        <img class="choices" onclick="play('papel')" src="img/papel.jpg" />
+        <img class="choices" onclick="play('tijera')" src="img/tijera.jpg" />
+      </div>
+    </div>
+    <div>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          margin-bottom: 25px;
+          margin-top: 25px;
+        "
+      >
+        <h2>Oponente</h2>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <div id="miDiv"></div>
+      </div>
+    </div>
+    <div class="result" style="margin-top: 35px">
+      <div>
+        <h2>Resultado:</h2>
+        <p id="resultText"></p>
+      </div>
+      <div></div>
+      <div style="display: flex">
+        <div style="margin-right: 10px; border: 1px solid black; padding: 2px">
+          <h2 id="victorias">Victorias: 0</h2>
+        </div>
+        <div style="margin-right: 10px; border: 1px solid black; padding: 2px">
+          <h2 id="derrotas">Derrotas: 0</h2>
+        </div>
+        <div style="margin-right: 10px; border: 1px solid black; padding: 2px">
+          <h2 id="partidasTotales">Partidas Totales: 0</h2>
+        </div>
+        <div style="margin-left: auto; margin-right: 10px">
+          <button id="botonJugar"><h2>Jugar</h2></button>
+        </div>
+      </div>
+      <div style="margin-left: auto;">
+        <h4>Integrantes del grupo: Lautaro Faure, Santiago Faginoli y Nicolas Pereyra.</h4>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
